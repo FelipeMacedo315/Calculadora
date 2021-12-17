@@ -1,10 +1,24 @@
 
 @media (max-width:375px){
 
+
+ #visor{
+     grid-area: visor;
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+    background-color: rgb(23, 57, 141);
+    color: white;
+    grid-area: visor;
+    
+     
+ }
+
 .botões{
+    grid-area: botões;
     display: grid;
     grid-template-columns: auto auto auto auto  ;
-    width: 80%;
+   
     grid-row-gap: 10%;
     grid-template-areas:
      "number7 number8 number9 button-DEL"
@@ -12,8 +26,9 @@
      "number1 number2 number3 button-subtração"
      "button-ponto number0 button-divisão button-multiplicação"
      " button-reset  button-reset button-resultado button-resultado ";
-    
-
+    padding-right: 10%;
+    padding-left: 10%;
+  
 }
 
 #number-0{
@@ -21,6 +36,7 @@
   
     height: 130%;
     border-radius: 5px;
+    
 }
 #number-1{
     grid-area: number1;
