@@ -1,13 +1,39 @@
 
-@media (max-width:375px){
+ @media (max-width:249px){
+    .botões{
+        font-size: small;
+    }
+    .visor{
+        font-size: small;
+    }
+}
 
+@media (max-width:375px){
+ 
+.calculadora{
+  
+    display: grid;
+    grid-template-rows: 30% 100%;
+    grid-template-columns: 100%;
+    grid-row-gap: 12%;
+    grid-template-areas: "visor" "botões";
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+   
+    
+    
+   
+   
+}
 
  #visor{
+     
      grid-area: visor;
     display: flex;
-    justify-content: flex-end;
-    align-items: baseline;
-    background-color: rgb(23, 57, 141);
+    align-items: center;
+    padding-left: 70%;
+    background-color: darkblue;
     color: white;
     grid-area: visor;
     
@@ -15,10 +41,10 @@
  }
 
 .botões{
+    height: auto;
     grid-area: botões;
     display: grid;
-    grid-template-columns: auto auto auto auto  ;
-   
+    grid-template-columns: 20%  20%   20%   20%  ;
     grid-row-gap: 10%;
     grid-template-areas:
      "number7 number8 number9 button-DEL"
@@ -26,9 +52,14 @@
      "number1 number2 number3 button-subtração"
      "button-ponto number0 button-divisão button-multiplicação"
      " button-reset  button-reset button-resultado button-resultado ";
-    padding-right: 10%;
-    padding-left: 10%;
-  
+    grid-column-gap: 1%;
+    
+   background-color: darkblue;
+   padding-left: 15%;
+   padding-top: 5%;
+   padding-bottom: 20%;
+
+ 
 }
 
 #number-0{
@@ -97,6 +128,7 @@
  
    height: 130%;
    border-radius: 5px;
+   word-wrap: break-word;
 }
 #button-soma{
     grid-area: button-soma;
@@ -139,5 +171,175 @@
   
     height: 130%;
     border-radius: 5px;
+   
 }
 }
+.body{
+    background-color: steelblue;
+}
+
+
+.calculadora{
+  
+    display: grid;
+    grid-template-rows: 30% 100%;
+    grid-template-columns: 100%;
+    grid-row-gap: 12%;
+    grid-template-areas: "visor" "botões";
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+   
+    
+    
+   
+   
+}
+
+ #visor{
+     
+     grid-area: visor;
+    display: flex;
+    align-items: center;
+    padding-left: 70%;
+    background-color: darkblue;
+    color: white;
+    grid-area: visor;
+    
+     
+ }
+
+.botões{
+    height: auto;
+    grid-area: botões;
+    display: grid;
+    grid-template-columns: 20%  20%   20%   20%  ;
+    grid-row-gap: 10%;
+    grid-template-areas:
+     "number7 number8 number9 button-DEL"
+     "number4 number5 number6 button-soma"
+     "number1 number2 number3 button-subtração"
+     "button-ponto number0 button-divisão button-multiplicação"
+     " button-reset  button-reset button-resultado button-resultado ";
+    grid-column-gap: 1%;
+    
+   background-color: darkblue;
+   padding-left: 15%;
+   padding-top: 5%;
+   padding-bottom: 20%;
+
+ 
+}
+
+#number-0{
+    grid-area: number0;
+  
+    height: 130%;
+    border-radius: 5px;
+    
+}
+#number-1{
+    grid-area: number1;
+  
+    height: 130%;
+    border-radius: 5px;
+}
+#number-2{
+    grid-area: number2;
+  
+    height: 130%;
+    border-radius: 5px;
+}
+#number-3{
+    grid-area: number3;
+  
+    height: 130%;
+    border-radius: 5px;
+}
+#number-4{
+    grid-area: number4;
+  
+    height: 130%;
+    border-radius: 5px;
+}
+#number-5{
+    grid-area: number5;
+  
+    height: 130%;
+    border-radius: 5px;
+}
+#number-6{
+    grid-area: number6;
+  
+    height: 130%;
+    border-radius: 5px;
+}
+#number-7{
+    grid-area: number7;
+  
+    height: 130%;
+    border-radius: 5px;
+}
+#number-8{
+    grid-area: number8;
+  
+    height: 130%;
+    border-radius: 5px;
+}
+#number-9{
+    grid-area: number9;
+
+    height: 130%;
+    border-radius: 5px;
+}
+#button-DEL{
+   grid-area: button-DEL;
+ 
+   height: 130%;
+   border-radius: 5px;
+   word-wrap: break-word;
+}
+#button-soma{
+    grid-area: button-soma;
+  
+    height: 130%;
+    border-radius: 5px;
+}
+#button-subtração{
+    grid-area: button-subtração ;
+  
+    height: 130%;
+    border-radius: 5px;
+}
+#button-multiplicação{
+    grid-area: button-multiplicação ;
+  
+    height: 130%;
+    border-radius: 5px;
+}
+#button-divisão{
+    grid-area: button-divisão ;
+  
+    height: 130%;
+    border-radius: 5px;
+}
+#button-ponto{
+    grid-area: button-ponto ;
+  
+    height: 130%;
+    border-radius: 5px;
+}
+#button-resultado{
+    grid-area: button-resultado ;
+  
+    height: 130%;
+    border-radius: 5px;
+}
+#button-reset{
+    grid-area: button-reset ;
+  
+    height: 130%;
+    border-radius: 5px;
+   
+}
+
