@@ -175,9 +175,23 @@
 }
 }
 .body{
-    background-color: steelblue;
+    background-color: rgb(31, 65, 94);
+    height: 120vh;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
-
+.header{
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+input[type=range]{
+    width: 40%;
+   }
+.change-theme{
+    display: flex;
+    flex-direction: column;
+}
 
 .calculadora{
   
@@ -189,11 +203,8 @@
     padding-top: 5%;
     padding-left: 5%;
     padding-right: 5%;
-   
+
     
-    
-   
-   
 }
 
  #visor{
@@ -201,12 +212,13 @@
      grid-area: visor;
     display: flex;
     align-items: center;
-    padding-left: 70%;
-    background-color: darkblue;
+    justify-content: flex-end;
+    padding-right: 5%;
+    background-color: rgb(25, 25, 51);
     color: white;
     grid-area: visor;
-    
-     
+    border-radius: 10px;
+ 
  }
 
 .botões{
@@ -223,10 +235,11 @@
      " button-reset  button-reset button-resultado button-resultado ";
     grid-column-gap: 1%;
     
-   background-color: darkblue;
+   background-color: rgb(25, 25, 51);
    padding-left: 15%;
    padding-top: 5%;
    padding-bottom: 20%;
+   border-radius: 10px;
 
  
 }
@@ -298,6 +311,8 @@
    height: 130%;
    border-radius: 5px;
    word-wrap: break-word;
+   background-color: steelblue;
+   color: white;
 }
 #button-soma{
     grid-area: button-soma;
@@ -334,12 +349,16 @@
   
     height: 130%;
     border-radius: 5px;
+    color: white;
+    background-color: red;
 }
 #button-reset{
     grid-area: button-reset ;
   
     height: 130%;
     border-radius: 5px;
+    background-color: steelblue;
+    color: white;
    
 }
 

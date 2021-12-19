@@ -10,29 +10,40 @@
     <script src="index.js"></script>
 </head>
 <body class="body">
+
+    <header class="header">
+      <h1>calc</h1> 
+      <div class="change-theme">
+        <p>theme</p>
+         <p>1 &nbsp 2 &nbsp 3</p>
+        <input type="range" min="20" max="60" value="20"/>
+      </div>
+
+
+    </header>
     <div class="calculadora">
      <div id="visor">
-         <h1>388.87</h1>
+         <h2 id="resultado"></h2>
     </div>
            <div class="botões">
-   <button id="number-1" type="button">1</button>
-   <button id="number-2" type="button">2</button>
-   <button id="number-3" type="button">3</button>
-   <button id="number-4" type="button">4</button>
-   <button id="number-5" type="button">5</button>
-   <button id="number-6" type="button">6</button>
-   <button id="number-7" type="button">7</button>
-   <button id="number-8" type="button">8</button>
-   <button id="number-9"type="button">9</button>
-   <button id="number-0" type="button">0</button>
-   <button id="button-ponto" type="button">.</button>
-   <button id="button-divisão"type="button">/</button>
-   <button id="button-multiplicação"type="button">X</button>
-   <button id="button-subtração" type="button">-</button>
-   <button id="button-soma" type="button">+</button>
-   <button id="button-DEL" type="button">DEL</button>
-   <button id="button-reset" type="button">RESET</button>
-   <button id="button-resultado" type="button">=</button>
+   <button onclick="capture_numbers1(1)"  id="number-1" type="button">1</button>
+   <button onclick="capture_numbers1(2)"  id="number-2" type="button">2</button>
+   <button onclick="capture_numbers1(3)" id="number-3" type="button">3</button>
+   <button onclick="capture_numbers1(4)"  id="number-4" type="button">4</button>
+   <button onclick="capture_numbers1(5)"  id="number-5" type="button">5</button>
+   <button onclick="capture_numbers1(6)"  id="number-6" type="button">6</button>
+   <button onclick="capture_numbers1(7)"  id="number-7" type="button">7</button>
+   <button onclick="capture_numbers1(8)"  id="number-8" type="button">8</button>
+   <button onclick="capture_numbers1(9)"  id="number-9"type="button">9</button>
+   <button onclick="capture_numbers1(0)" id="number-0" type="button">0</button>
+   <button onclick="capture_numbers1('.')" id="button-ponto" type="button">.</button>
+   <button onclick="capture_numbers1('/')" id="button-divisão"type="button">/</button>
+   <button onclick="capture_numbers1('*')"  id="button-multiplicação"type="button">X</button>
+   <button onclick="capture_numbers1('-')"  id="button-subtração" type="button">-</button>
+   <button onclick="capture_numbers1('+')"  id="button-soma" type="button">+</button>
+   <button onclick="del()" id="button-DEL" type="button">DEL</button>
+   <button onclick='clean()' id="button-reset" type="button">RESET</button>
+   <button onclick="result()" id="button-resultado" type="button">=</button>
 </div>
 </div>
 </body>
