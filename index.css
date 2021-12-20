@@ -9,8 +9,18 @@
 }
 
 @media (max-width:375px){
+    .calculadora-roxa{
+        color: yellow;
+     
+        background-color: indigo;
+    }
+    .body-roxo{
+        color: yellow;
+        background-color: indigo;
+    }
+    
  
-.calculadora{
+#calculadora{
   
     display: grid;
     grid-template-rows: 30% 100%;
@@ -174,16 +184,25 @@
    
 }
 }
+
+
+*{
+    box-sizing: border-box;
+}
 .body{
     background-color: rgb(31, 65, 94);
-    height: 120vh;
+ 
     color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 .header{
   display: flex;
   align-items: baseline;
   justify-content: space-between;
+  padding-left: 25%;
+  padding-right: 25%;
+
 }
 input[type=range]{
     width: 40%;
@@ -193,7 +212,7 @@ input[type=range]{
     flex-direction: column;
 }
 
-.calculadora{
+#calculadora{
   
     display: grid;
     grid-template-rows: 30% 100%;
@@ -201,9 +220,10 @@ input[type=range]{
     grid-row-gap: 12%;
     grid-template-areas: "visor" "botões";
     padding-top: 5%;
-    padding-left: 5%;
-    padding-right: 5%;
-
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-bottom: 20%;
+  
     
 }
 
@@ -218,10 +238,11 @@ input[type=range]{
     color: white;
     grid-area: visor;
     border-radius: 10px;
- 
+    height: 120px;
+    
  }
 
-.botões{
+#botões{
     height: auto;
     grid-area: botões;
     display: grid;
@@ -361,4 +382,12 @@ input[type=range]{
     color: white;
    
 }
-
+.calculadora-roxa{
+    color: yellow;
+ 
+    background-color: indigo;
+}
+.body-roxo{
+    color: yellow;
+    background-color: indigo;
+}
