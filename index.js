@@ -1,5 +1,6 @@
 
 var title
+
 function capture_numbers1(num) {
 
  title= document.getElementById('resultado').innerHTML += num
@@ -8,7 +9,7 @@ function capture_numbers1(num) {
 }
 
 function result() {
-    
+
 
  var result = eval(title)
  console.log(result)
@@ -19,8 +20,8 @@ function result() {
 }
 
 function clean() {
-
-  document.getElementById('resultado').innerText=''
+  document.getElementById('resultado').innerText=result
+  return true
 }
 
 function del() {
@@ -41,6 +42,7 @@ function change_background_color() {
   else if(change_background>30||change_background<=40){
     document.getElementById('calculadora').classList.add('calculadora-roxa')
     document.getElementById('id-body').classList.add('body-roxo')
+  
 
     
   }
